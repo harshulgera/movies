@@ -1,0 +1,12 @@
+[DEBUG] 2022-02-11 12:18:34,380 main            com.sapient.util.InputUtil [  20] 
+[DEBUG] 2022-02-11 12:21:51,509 main            com.sapient.util.InputUtil [  20] 
+[DEBUG] 2022-02-11 12:22:12,675 main            com.sapient.util.InputUtil [  20] 
+[DEBUG] 2022-02-11 12:22:16,146 main            com.sapient.util.InputUtil [  20] 
+[DEBUG] 2022-02-11 12:33:33,819 main            com.sapient.util.InputUtil [  20] 
+[DEBUG] 2022-02-11 12:33:49,771 main            com.sapient.util.InputUtil [  20] 
+[DEBUG] 2022-02-11 12:33:51,305 main            com.sapient.util.InputUtil [  20] 
+[DEBUG] 2022-02-11 12:33:52,417 main            com.sapient.views.UserView [ 226] Cannot invoke "com.sapient.entity.Movie.getReview()" because "movie" is null
+[DEBUG] 2022-02-11 12:33:53,682 main            com.sapient.views.UserView [ 226] Cannot invoke "com.sapient.entity.Movie.getReview()" because "movie" is null
+[DEBUG] 2022-02-11 12:34:03,738 main            com.sapient.views.UserView [ 226] Cannot invoke "com.sapient.entity.Movie.getReview()" because "movie" is null
+[DEBUG] 2022-02-11 14:32:20,826 main            com.sapient.views.UserView [ 286] 
+[DEBUG] 2022-02-11 16:44:15,341 main            com.sapient.util.InputUtil [  20] 
