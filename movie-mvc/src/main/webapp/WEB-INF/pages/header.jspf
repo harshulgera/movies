@@ -1,0 +1,72 @@
+<!-- This is the start of header -->
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://bootswatch.com/5/united/bootstrap.min.css" rel="stylesheet">
+
+<meta charset="UTF-8">
+<title>FlixME!</title>
+</head>
+<body>
+
+	<div class="alert alert-primary">
+		<div class="container">
+			<h1>FlixME!</h1>
+		</div>
+	</div>
+	<div class="container">
+	<div class="row">
+	<div class="col-7">
+	
+	<a class="btn btn-link" href="./">Home</a> 
+	<a class="btn btn-link" href="./all-movies">All Movies</a>
+	<c:choose>
+		<c:when test="${loggedInUser==null}">
+			<a class="btn btn-link" href="./add-new-user">Register</a>
+			<a class="btn btn-link" href="./login-user">Login</a>
+		</c:when>
+		
+		
+			<c:when test="${loggedInUser.isAdmin==true}">
+			<a class="btn btn-link" href="./add-new-movie">Add new Movie</a>
+			<a class="btn btn-link" href="./edit-user?id=${sessionScope.loggedInUser.userId}">Edit Admin Details</a>
+			<a class="btn btn-link" href="./logout">Logout</a>
+			</c:when>
+		
+		<c:otherwise>
+			<a class="btn btn-link" href="./edit-user?id=${sessionScope.loggedInUser.userId}">Edit Your Details</a>
+			<a class="btn btn-link" href="./show-user-details?id=${sessionScope.loggedInUser.userId}">View Your Details</a>
+			<a class="btn btn-link" href="./show-user-reviews?id=${sessionScope.loggedInUser.userId}">View Your Reviews</a>
+			<!-- <a class="btn btn-link" href="./">Search Movie</a> -->
+			<a class="btn btn-link" href="./logout">Logout</a>
+			
+			
+			
+		</c:otherwise>
+		
+		
+		
+	</c:choose>
+	</div>
+	<div class="col-4">
+				<form class="form-inline" method="post" action="all-movies">
+				<input type="text" name="searchTitle" class="form-control" placeholder="Search Movie By Title, Genre, Cast or Year..">
+				
+			</div>
+		<div class="col-1">	
+	<button type="submit" class="btn btn-primary">Search</button>
+			</form>		
+			</div>
+			
+		<hr />
+	
+	</div>
+	</div>
+	
+	<div class="container" style="min-height: 400px;">
+	
+<!-- This is the end of header -->

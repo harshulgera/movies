@@ -1,0 +1,66 @@
+<!-- USER -->
+###
+
+
+POST /api/users/login
+Accept: application/json
+Host: localhost:8002
+Content-Type: application/json
+
+{"email":"elon.musk@gmail.com","password":"pass"}
+
+####
+GET /api/users/verify?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiRWxvbiBNdXNrIiwiaWQiOjIxLCJleHAiOjE2NDYzMzMyNzUsImlhdCI6MTY0NjMzMjM3NSwiZW1haWwiOiJlbG9uLm11c2tAZ21haWwuY29tIn0.T0tUO2WKKMnfae2IOirFeAmnSEkILXRoGiBqTY5Azwc
+Accept: application/json
+Host: localhost:8002
+
+####
+
+GET /api/users/21?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiRWxvbiBNdXNrIiwiaWQiOjIxLCJleHAiOjE2NDYzMzMyNzUsImlhdCI6MTY0NjMzMjM3NSwiZW1haWwiOiJlbG9uLm11c2tAZ21haWwuY29tIn0.T0tUO2WKKMnfae2IOirFeAmnSEkILXRoGiBqTY5Azwc
+Accept: application/json
+Host: localhost:8002
+
+
+
+
+
+<!-- MOvies-->
+####
+
+GET /api/movies
+Accept: application/json
+Host: localhost:8001
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiRWxvbiBNdXNrIiwiaWQiOjIxLCJleHAiOjE2NDYzMzMyNzUsImlhdCI6MTY0NjMzMjM3NSwiZW1haWwiOiJlbG9uLm11c2tAZ21haWwuY29tIn0.T0tUO2WKKMnfae2IOirFeAmnSEkILXRoGiBqTY5Azwc
+
+####
+
+GET /api/movies/11
+Accept: application/json
+Host: localhost:8001
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiRWxvbiBNdXNrIiwiaWQiOjIxLCJleHAiOjE2NDYzMzMyNzUsImlhdCI6MTY0NjMzMjM3NSwiZW1haWwiOiJlbG9uLm11c2tAZ21haWwuY29tIn0.T0tUO2WKKMnfae2IOirFeAmnSEkILXRoGiBqTY5Azwc
+
+
+
+<!-- REVIEWS-->
+####
+
+
+
+GET /api/reviews/
+Accept: application/json
+Host: localhost:8000
+####
+
+
+
+GET /api/reviews/15
+Accept: application/json
+Host: localhost:8000
+
+####
+
+GET /api/reviews/movie/12
+Accept: application/json
+Host: localhost:8000
+
+####
